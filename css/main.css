@@ -1,0 +1,250 @@
+body {
+	margin: 0px; /* The page starts at the top left edge */
+	background-image: url("background.jpg"); /* source of background-image*/
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+				 -moz-background-size: cover;
+				 -o-background-size: cover;
+				 background-size: cover;
+background-size: cover;  /* Background on all size page*/
+	padding: 0px;
+
+
+}
+
+
+.mainblock {
+display: flex; /* flex display for div */
+word-wrap: nowrap; /* word wrap, so that they don 't follow the line, but move when the screen is reduced*/
+flex-wrap: wrap;
+width: 80%; /* size of mainblock*/
+margin-top: 20px; /* offset from the top edge */
+margin-left: 180px; /* offset from the left side */
+}
+
+.mainblock > div {
+	border: 2px solid white; /* the border around the blocks*/
+	box-shadow: 0 1px 3px;  /* shadows for div */
+	background-color: transparent; /* block transparency */
+	font-family: sans-serif; /* type of font */
+	font-size: 17px; /* size of font */
+	margin-top: 30px;
+
+
+}
+
+
+
+
+.mainblock h5 {
+ text-transform: uppercase; /* main size of text for h5*/
+  font: 700 "Oswald", sans-serif; /*size and name of font*/
+  text-shadow: 0 0 80px rgba(255, 255, 255, 0.9); /* shadows*/
+  animation: bounce-top 2s; /* name of animation and time of event*/
+font-size: 16px; /* size h5 */
+color:white;  /*color for h5 text*/
+margin-top: 30px; /* offset from top h5 text*/
+}
+
+
+
+
+
+
+.tit b {
+ text-transform: uppercase; /* main size of text for .tit b (ABC)*/
+  font: 650 "Oswald", sans-serif; /*size and name of font*/
+font-size: 70px; /* size <b> in .tit */
+  text-shadow: 0 0 80px rgba(255, 255, 255, 0.9); /*shadows*/
+  animation: fallword 2s; /* name of animation and time of event*/
+  color: #fff; /* color of text <b> */
+  margin-left: 150px;  /* offset from left <b> text*/
+   margin-top: 30px;  /* offset from top <b> text*/
+
+}
+
+@keyframes fallword { /* aninamtion for fallen letters in site*/
+  0% {  /* 0 position with transform offeset on up -45px, and action is calm, and opacity of letters - 1 */
+    transform: translateY(-45px);
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(-24px); /* 1 position with transform offeset on up -24px, and action is calm, and opacity of letters - 1 */
+    animation-timing-function: ease-in;
+  }
+  65% {
+    transform: translateY(-12px); /* 2 position with transform offeset on up -12px, and action is calm, and opacity of letters - 1 */
+    animation-timing-function: ease-in;
+  }
+  82% {
+    transform: translateY(-6px); /* 3 position with transform offeset on up -6px, and action is calm, and opacity of letters - 1 */
+    animation-timing-function: ease-in;
+  }
+  93% {
+    transform: translateY(-4px); /* 4 position with transform offeset on up -4px, and action is calm, and opacity of letters - 1 */
+    animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    transform: translateY(0px); /* last position with transform offeset 0px, and action is calm, and opacity of letters - 1 */
+    animation-timing-function: ease-out;
+  }
+ ]
+}
+
+
+
+@media screen and (max-width: 1060px) {  /* Media Queries: Tablet Landscape */
+    #primary { width:67%; } /*max size show on laptop*/
+    #secondary { width:30%; margin-left:3%;font: sans-serif;}
+footer {
+ 	width: 1060px; /* width footer on laptop*/
+ 	margin-top: 120px; /* offset from top on 120px footer */
+
+ }
+ .mainblock {
+ 	margin-left: 10px; /* offset from left on 10px for mainblock */
+ }
+  .tit b {
+ 	font-size: 30px; /* size of text for .tit b in laptop */
+ 	margin-left: 20px; /* offest margin from left 20 px in laptop for <b> */
+ 	white-space: nowrap; /* offset from top on 120px footer in laptop for <b> */
+ 	word-wrap: break-word; /* words divided on lines in laptop for <b>*/
+ }
+  .mainblock > div { /*size blocks for laptop permission */
+ 	width: 699.5px;
+ height:450.5px;
+
+
+ }
+ .mainblock img { /*size images  for laptop permission */
+width: 696.5px;
+ height:446.5px;
+ }
+ .mainblock h5 { /* size of h5 and transfer text from bot on 25px*/
+ 	font-size: 13px;
+ 	padding-bottom: 25px;
+ }
+
+}
+
+
+
+@media screen and (max-width: 767px) { /* Media Queries: Tabled Portrait from 362px to 767px */
+    #primary { width:100%; } /*max size show on laptop*/
+    #secondary { width:100%; margin:0; border:none; font: sans-serif;} /* type of font for tablets and margin */
+ p {
+ 	font-size: 10px; /*size text for paragraph*/
+ }
+ footer {
+ 	width: 768px; /*size(width) on devices special for 768px (Tablets/Phones) */
+
+ }
+ footer span {
+ 	margin-left: -450px; /*margin for footer span text*/
+ }
+ footer button {
+ 	margin-left: -400px; /*margin for button on device*/
+ }
+ .mainblock h5 {
+	font-size: 12px; /*size text for paragraph*/
+}
+
+ .mainblock > div {
+ 	width: 354px; /*width of blocks for device*/
+ 	height: 254px; /*height of blocks for device*/
+
+ }
+ .mainblock img {
+ 	width: 350px; /*size images for devices*/
+ 	height: 250px;
+ }
+.tit b {
+	font-size: 18px; /* text size for <b> */
+}
+}
+
+
+
+@media screen and (max-width: 361px) { /* for Galaxy S5, Pixel2, Iphone 5/5S */
+    #primary { width:100%; }/*max size show on devices*/
+    #secondary { width:100%; margin:0; border:none; font: sans-serif;}
+ p {
+ 	font-size: 10px;  /*size text for paragraph*/
+ }
+ footer {
+ 	width: 768px; /*size(width) on devices special for 768px (Iphone/Samsung) */
+
+ }
+ footer span {
+ 	margin-left: -450px; /*margin for footer span text*/
+ }
+
+ .mainblock > div {
+ 	width: 315px; /*width of blocks for device*/
+ 	height: 245px; /*height of blocks for device*/
+
+ }
+ .mainblock img {
+ 	width: 312px; /*size images for devices*/
+ 	height: 242px;
+ }
+.mainblock h5 {
+	font-size: 12px; /* size h5 text */
+
+}
+.tit b {
+	font-size: 15px; /* text size for <b> */
+}
+}
+
+@media screen and (max-width: 321px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; font: sans-serif; }
+ p {
+ 	font-size: 10px; /*size text for paragraph*/
+ }
+ footer {
+ 	width: 768px;
+
+ }
+ footer span {
+ 	margin-left: -450px;/*margin for footer span text*/
+ }
+
+ .mainblock > div {
+ 	width: 300px;/*width of blocks for device*/
+ 	height: 223px; /*height of blocks for device*/
+
+ }
+ .mainblock img {
+ 	width: 295px; /*size images for devices*/
+ 	height: 220px;
+ }
+.mainblock h5 {
+	font-size: 12px; /* size h5 text */
+}
+.tit b {
+	font-size: 14px; /* text size for <b> */
+}
+}
+
+#btn1 {
+   font-size: 14px;
+}
+
+
+
+#nav-toggle-button span {
+    background-color: white; /* color of icon toggler in navbar*/
+}
+
+
+
+.container{background-color:white; padding: 15px; } /* color for container register/authorisation form*/

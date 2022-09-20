@@ -1,0 +1,10 @@
+Первое видео:
+сам сайт с ноутбука
+https://www.youtube.com/watch?v=mY1Q-j5uQu8&feature=youtu.be
+
+Второе видео: с телефона
+https://www.youtube.com/watch?v=gdufSmeXuwc&feature=youtu.be
+
+(не получилось связать, так как форматы видео не подходили друг другу)
+
+Комментарии все в main.css в папке css

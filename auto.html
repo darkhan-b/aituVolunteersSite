@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> <!-- Подключение boostrap и Jquery -->
+<meta name="HandheldFriendly" content="true"> 
+<!-- Комменты в main.css -->
+  <style>
+    body {
+  margin: 0px;
+  background-image: url(https://images.wallpaperscraft.com/image/net_gray_background_bright_83492_2048x1152.jpg) ;
+min-width: 678px;
+background-size: cover;
+  padding: 0px;
+overflow-x: hidden;
+
+}
+
+
+.mainblock {
+display: flex;
+
+word-wrap: nowrap;
+  justify-content: space-between;
+
+flex-wrap: wrap;
+width: 80%;
+margin-top: 20px;
+margin-left: 180px;
+}
+
+.mainblock > div {
+  border: 2px solid white;
+  box-shadow: 0 1px 3px; 
+  background-color: transparent;
+  font-family: sans-serif;
+  font-size: 17px;
+  justify-content: space-between;
+
+  margin-top: 30px;
+
+
+}
+
+.mainblock > div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+.mainblock h5 {
+ text-transform: uppercase;
+  font: 700 "Oswald", sans-serif;
+
+  text-shadow: 0 0 80px rgba(255, 255, 255, 0.9);
+  animation: bounce-top 2s;
+font-size: 16px; color:white; margin-top: 30px;
+}
+
+
+
+
+
+
+.tit b {
+ text-transform: uppercase;
+  font: 650 "Oswald", sans-serif;
+font-size: 70px; 
+  text-shadow: 0 0 80px rgba(255, 255, 255, 0.9);
+  animation: bounce-top 2s;
+  color: #fff; margin-left: 150px; margin-top: 30px;display: flex;
+}
+
+@keyframes bounce-top {
+  0% {
+    transform: translateY(-45px);
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(-24px);
+    animation-timing-function: ease-in;
+  }
+  65% {
+    transform: translateY(-12px);
+    animation-timing-function: ease-in;
+  }
+  82% {
+    transform: translateY(-6px);
+    animation-timing-function: ease-in;
+  }
+  93% {
+    transform: translateY(-4px);
+    animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+  }
+ ]
+}
+
+
+/* Media Queries: Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;font: sans-serif;}
+footer {
+  width: 1060px;
+  margin-top: 620px;
+  
+ }
+ .mainblock {
+  margin-left: 10px;
+ }
+  .tit b {
+  font-size: 30px;
+  margin-left: 20px;
+  white-space: nowrap;
+  display: flex;
+  word-wrap: break-word;
+ }
+  .mainblock > div {
+  width: 699.5px;
+ height:450.5px;
+ 
+
+ }
+ .mainblock img {
+width: 696.5px;
+ height:446.5px;
+ }
+ .mainblock h5 {
+  font-size: 13px;
+  padding-bottom: 25px;
+ }
+.container-fluid {
+  width: 750px;
+  margin-left: 0px;
+}
+
+.container-fluid p{
+  font-size: 1px;
+  margin-top: 10px;
+}
+}
+
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 767px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; font: sans-serif;}
+ p {
+  font-size: 10px;
+ }
+ footer {
+  width: 767px;
+  
+ }
+ footer span {
+  margin-left: -450px;
+ }
+ footer button {
+  margin-left: -400px;
+ }
+ .mainblock h5 {
+  font-size: 12px;
+}
+.mainblock {
+  width: 490px;
+}
+ .mainblock > div {
+  width: 324px;
+  height: 254px;
+
+ }
+ .mainblock img {
+  width: 320px;
+  height: 250px;
+ }
+.tit b {
+  font-size: 15px;
+}
+.container-fluid {
+  width: 400px;
+  margin-left: 0px;
+}
+
+.container-fluid p{
+  font-size: 15px;
+  margin-top: 10px;
+}
+}
+
+@media screen and (min-width: 576px) { {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; font: sans-serif;}
+
+ p {
+  font-size: 10px;
+ }
+ footer {
+  max-width: 415px;
+  
+ }
+
+ .mainblock h5 {
+  font-size: 12px;
+}
+
+ .mainblock > div {
+  width: 354px;
+  height: 254px;
+
+ }
+ .mainblock img {
+  width: 350px;
+  height: 250px;
+ }
+.tit b {
+  font-size: 18px;
+}
+}
+
+/* Galaxy S5 */
+@media screen and (max-width: 361px) {
+    #primary { width:60%; }
+    #secondary { width:30%; margin:0; border:none; font: sans-serif;}
+ p {
+  font-size: 10px;
+ }
+ footer {
+  width: 768px;
+  
+ }
+ footer span {
+  margin-left: -450px;
+ }
+
+ .mainblock > div {
+  width: 315px;
+  height: 245px;
+
+ }
+ .mainblock img {
+  width: 312px;
+  height: 242px;
+ }
+.mainblock h5 {
+  font-size: 12px;
+
+}
+.tit b {
+  font-size: 15px;
+}
+}
+
+@media screen and (max-width: 321px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; font: sans-serif; }
+ p {
+  font-size: 10px;
+ }
+ footer {
+  width: 768px;
+  
+ }
+ footer span {
+  margin-left: -450px;
+ }
+
+ .mainblock > div {
+  width: 300px;
+  height: 223px;
+
+ }
+ .mainblock img {
+  width: 295px;
+  height: 220px;
+ }
+.mainblock h5 {
+  font-size: 12px;
+}
+.tit b {
+  font-size: 14px;
+}
+}
+
+#btn1 {
+   font-size: 14px;
+}
+
+
+
+#nav-toggle-button span {
+    background-color: white;
+}
+
+
+  </style>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  <!-- Ajax подключение -->
+
+  <meta charset="utf-8">
+
+  <title>Авторизация на сайтеx  </title>
+
+</head>
+<body>
+  <!-- Navigation Bar menu -->
+  <div class="container" id="nav14" >
+   <nav class="navbar fixed-top navbar-dark navbar-expand-lg bg-dark"  >
+      <a class="navbar-brand" style="color:white">
+          
+      AITU VOLUNTEERS SITE
+      </a>
+      <button class="navbar-toggler" type="button" data-target="#my-nav" data-toggle="collapse" style="background-image: ">
+<span class="navbar-toggler-icon"></span>
+      </button> 
+      <div id="my-nav" class="collapse navbar-collapse" >
+       <ul class="navbar-nav mr-auto" style="margin-left: 15px;">
+        <li class="nav-item active">
+         <a class="nav-link" href="index.html" style="color:white; margin-left: 10px;">Главная страница</a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link" href="description.html" style="color:white; margin-left: 10px;">Описание клуба</a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link" href="events.html" style="color:white; margin-left: 10px;">Мероприятия</a>
+        </li>
+      <li class="nav-item">
+         <a class="nav-link" href="department.html" style="color:white; margin-left: 10px;">Волонтерский департамент</a>
+        </li>
+ <!-- DropDown -->
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:white; margin-left: 10px;">
+          Информация
+        </a>  <!-- Navigation Bar menu -->
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="owners.html">Основатели клуба</a>
+          <a class="dropdown-item" href="avc.html">AdalVolunteerClub</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="rules.html">Правила клуба</a>
+          <a class="dropdown-item" href="partners.html">Партнеры</a>
+        </div>
+      </li>
+
+      
+      <p style="margin-left: 358px;">
+        <li style="">
+ <!-- Buttons -->
+         <a href="auto.html"><button class="btn btn-outline-success" >Вход</button> </a>
+          <a href="register.html"><button class="btn btn-outline-success" >Регистрация</button></a>
+
+        </li>
+        <li>
+
+        </li>
+       </ul>
+      </div>
+   </nav>
+  </div>
+    </header>
+
+
+  <!-- Big letters -->
+<div  class="tit" style="padding-top: 35px; width: 100%"  >
+<b style=" ">Авторизация на сайте</b></div>
+  <!-- Content login and forgotten password -->
+ <div class="container-fluid" style="margin-top: 20px;  ">
+    <div class="container" style="box-shadow: 0 1px 5px; ">
+      <h2 class="text-center" id="title">Если ты волонтер Astana IT University - заходи на сайт</h2>
+       <p class="text-center">
+        <small id="passwordHelpInline" class="text-muted"> Авторизация проходит строго по указанным данным. За потерю пароля или забывчивости почты - ответственность администрация сайта не несет.</small>
+      </p>
+      <hr>
+      <div class="row">
+        <div class="col-md-5">
+            <!-- Login form inputs -->
+            <fieldset>              
+              <p class="text-uppercase pull-center"> Авторизация на сайте</p> 
+              <div class="form-group">
+                <input type="text" name="username" id="username" class="form-control input-lg" placeholder="username">
+              </div>
+
+              <div class="form-group">
+                <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email Address">
+              </div>
+              <div class="form-group">
+                <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password">
+              </div>
+                
+              <div class="form-check">
+               
+                </div><p>
+              <div>
+
+                    <input type="submit" class="btn btn-lg btn-primary" onclick="check1()" placeholder="Авторизация">
+              </div>
+            </fieldset>
+        
+        </div>
+        
+        <div class="col-md-2">
+
+        </div>
+        
+        <div class="col-md-5">
+            <form role="form">
+            <fieldset>               <!-- Menu forgot password -->
+              <p class="text-uppercase"> Забыли пароль? Не беда </p> 
+                
+              <div class="form-group">
+                <input type="text" name="username" id="username1" class="form-control input-lg" placeholder="username">
+              </div>
+              <div class="form-group">
+                <input type="email" name="email" id="email1" class="form-control input-lg" placeholder="Email Address">
+              </div>
+              <div>
+                <input type="submit" class="btn btn-md" onclick="check2()" value="Отправить код">
+              </div>
+                 
+            </fieldset>
+        </form> 
+        </div>
+      </div>
+    </div>
+    <p class="text-center">
+      
+  </div>
+  </div>
+
+ <!-- Footer -->
+<footer class="page-footer font-small bg-dark"  style="margin-top: 250px;">
+
+  <div class="footer-copyright text-center py-3" style="color:white" ><span>© 2020 Copyright:
+    <a href="https://www.instagram.com/aitu_volunteers/"> AITU VOLUNTEERS</a></span>
+<p><p>
+ <!-- Javascript -->
+  <script>
+/*code on email */
+    function check1() {
+
+      if(document.getElementById("email").value === '') {
+alert('Вы не ввели почту');
+      }
+      if  (document.getElementById("username").value === '') {
+        alert('Вы не ввели никнейм');
+      }
+      if (document.getElementById("password").value === '') {
+        alert('Вы не ввели пароль');
+      }
+      else {
+    alert('Код подтверждения был выслан на почту, по которой Вы регистрировались');
+  }
+}
+
+   function check2() {
+
+      if(document.getElementById("email1").value === '') {
+alert('Вы не ввели почту');
+      }
+      if  (document.getElementById("username1").value === '') {
+        alert('Вы не ввели никнейм');
+      } 
+
+      else {
+    alert('Код подтверждения был выслан на почту, по которой Вы регистрировались');
+  }
+}
+
+    </script>
+</body>
+</html>
